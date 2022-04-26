@@ -1,0 +1,66 @@
+@import "general.scss";
+
+.container
+{
+    text-align: center;
+    padding: 2rem;    
+}
+.fifteen
+{
+    width: 100%;
+    height: calc(100vw - 4rem);
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    background: #e5d6f6;
+    user-select: none;
+    margin: 6rem auto 2rem;
+
+    &_victory > .fifteen__item
+    {       
+        filter: contrast(1.5);        
+    }
+}
+.fifteen__item
+{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #06c;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: inset 1px 1px #e5d6f6;
+    outline: none;
+    transition: transform .25s, filter 1s, background-color .75s;
+    
+    span
+    {
+        display: flex;
+        width: 84%;
+        height: 84%;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 0 2px #eebc5a;
+        margin: 8%;
+    }
+
+}
+.mix-btn
+{
+    min-width: 175px;
+    background: #333;    
+    color: #fff;
+    font: 1.2rem/1.4 Georgia, sans-serif;
+    cursor: pointer;
+    padding: .5em 1.5em;
+    border: none;
+    transition: background-color .25s;
+
+    &:hover
+    {
+        background: #922ec5;      
+    }
+}
